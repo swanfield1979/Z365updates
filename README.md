@@ -2,21 +2,21 @@
 
 Publieke updatebestanden voor Z365. De automatische updater van Z365 gebruikt de GitHub Releases van deze repository.
 
-De nieuwste gepubliceerde versie is **0.3.12** (16 oktober 2026).
+De nieuwste gepubliceerde versie is **0.3.13** (16 oktober 2026).
 
-- [Release 0.3.12 en wijzigingsinformatie](https://github.com/swanfield1979/Z365updates/releases/tag/v0.3.12)
-- [Download Z365 0.3.12 voor Windows x64](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.12/Z365-0.3.12-win-x64.zip)
-- [SHA256-controlesom](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.12/Z365-0.3.12-win-x64.zip.sha256)
+- [Release 0.3.13 en wijzigingsinformatie](https://github.com/swanfield1979/Z365updates/releases/tag/v0.3.13)
+- [Download Z365 0.3.13 voor Windows x64](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.13/Z365-0.3.13-win-x64.zip)
+- [SHA256-controlesom](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.13/Z365-0.3.13-win-x64.zip.sha256)
 
-## Historie scan in 0.3.12
+## Eén complete Historie scan in 0.3.13
 
-Kies **Netwerk > Historie scan**. Deze pagina heeft één vaste selectie: **10 jaar of ouder**. Jongere bestanden worden na de datumcontrole direct overgeslagen en niet in de historiescan-index opgeslagen. Er zijn hier geen andere scanopties.
+Kies **Netwerk > Historie scan** en **Scan starten / hervatten**. De scan bouwt één totaaloverzicht op over alle ingevoerde locaties. Er worden geen losse scans meer getoond.
 
-Onder **Opgeslagen scans** blijven alle scans zichtbaar, ook na herstart. Eerdere netwerk- en historiescans uit 0.3.10 en 0.3.11 zijn terug te vinden. Kies **Bekijk scan > PDF maken** voor uitsluitend bestandsnaam inclusief extensie, volledig pad en laatste wijzigingsdatum, **van nieuw naar oud**.
+Ieder verwerkt bestand wordt direct onthouden, inclusief bestanden die te jong zijn en worden overgeslagen. Bij hervatten krijgen die geen nieuwe datumcontrole. Volledig verwerkte mappen en hun inhoud worden niet opnieuw geopend. Alleen ontbrekende bestanden en onvolledige delen worden hervat, ook na herstart.
 
-De Windows-update vanuit 0.3.11 is getest met behoud van een eerder gemaakte historiescan, configuratie en runtimegegevens. Daarna zijn ook een nieuwe scan en PDF-download getest. Bewaarde miniscans blijven hervatbaar en eerdere rapporten veranderen niet door vervolgscans.
+**Scan PDF** bevat alle opgeslagen bestanden van **10 jaar of ouder** uit alle locaties, zonder dubbele paden. De PDF bevat uitsluitend bestandsnaam inclusief extensie, volledig pad en laatste wijzigingsdatum, **van nieuw naar oud**. De selectiegrens blijft die van de eerste scanstart. Bestanden die later worden gewijzigd of toegevoegd in een afgeronde map worden niet opnieuw gemeten.
 
-Een eerdere gewone inventarisatie zonder opgeslagen bestandslijst kan niet achteraf betrouwbaar worden gereconstrueerd. De historie toont dit expliciet; start daarvoor een nieuwe Historie scan.
+Bestaande historiescanresultaten en bekende afgeronde mappen uit 0.3.12 worden bij de update overgenomen. Oude versies onthielden te jonge bestanden nog niet afzonderlijk; in een toen onvoltooide map kunnen die tijdens de eerste hervatting eenmaal opnieuw worden gecontroleerd. De echte Windows-update vanuit 0.3.12 met behoud van resultaten en de totale PDF is getest; 289 tests slagen.
 
 ## Verbeteringen in 0.3.9
 
@@ -30,7 +30,7 @@ Grote netwerkscans worden in kleinere stappen opgeslagen en kunnen na pauzeren o
 
 De oude updatehelper kan na een geslaagde installatie alsnog terugrollen doordat de afsluitcode van npm niet goed wordt gelezen. Herstel eerst deze helper:
 
-1. Download en pak de ZIP van 0.3.12 uit in een aparte map.
+1. Download en pak de ZIP van 0.3.13 uit in een aparte map.
 2. Start `Herstel-Z365-update.cmd` vanuit die uitgepakte map en selecteer je bestaande Z365-installatiemap.
 3. Start de update opnieuw vanuit je bestaande Z365-installatie.
 
