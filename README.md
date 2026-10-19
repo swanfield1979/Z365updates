@@ -2,13 +2,19 @@
 
 Publieke updatebestanden voor Z365. De automatische updater van Z365 gebruikt de GitHub Releases van deze repository.
 
-De nieuwste gepubliceerde versie is **0.3.13** (16 oktober 2026).
+De nieuwste gepubliceerde versie is **0.3.14** (19 oktober 2026).
 
-- [Release 0.3.13 en wijzigingsinformatie](https://github.com/swanfield1979/Z365updates/releases/tag/v0.3.13)
-- [Download Z365 0.3.13 voor Windows x64](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.13/Z365-0.3.13-win-x64.zip)
-- [SHA256-controlesom](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.13/Z365-0.3.13-win-x64.zip.sha256)
+- [Release 0.3.14 en wijzigingsinformatie](https://github.com/swanfield1979/Z365updates/releases/tag/v0.3.14)
+- [Download Z365 0.3.14 voor Windows x64](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.14/Z365-0.3.14-win-x64.zip)
+- [SHA256-controlesom](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.14/Z365-0.3.14-win-x64.zip.sha256)
 
-## Eén complete Historie scan in 0.3.13
+## Snellere PDF-export in 0.3.14
+
+Grote historiescans verzenden de PDF nu tijdens het maken. Lange paden worden sneller verwerkt en afgeronde pagina’s blijven niet allemaal in het geheugen. Bij een afgebroken download stopt de export. Gecontroleerd met 35.862 fictieve bestanden: circa 8 seconden in de lokale proef, tegenover circa 35 seconden voorheen. Andere machines kunnen afwijken.
+
+Werk bij via **Instellingen > Updates**. Kies daarna opnieuw **Scan PDF** bij de opgeslagen historiescan; opnieuw scannen is niet nodig.
+
+## Eén complete Historie scan sinds 0.3.13
 
 Kies **Netwerk > Historie scan** en **Scan starten / hervatten**. De scan bouwt één totaaloverzicht op over alle ingevoerde locaties. Er worden geen losse scans meer getoond.
 
@@ -30,7 +36,7 @@ Grote netwerkscans worden in kleinere stappen opgeslagen en kunnen na pauzeren o
 
 De oude updatehelper kan na een geslaagde installatie alsnog terugrollen doordat de afsluitcode van npm niet goed wordt gelezen. Herstel eerst deze helper:
 
-1. Download en pak de ZIP van 0.3.13 uit in een aparte map.
+1. Download en pak de ZIP van 0.3.14 uit in een aparte map.
 2. Start `Herstel-Z365-update.cmd` vanuit die uitgepakte map en selecteer je bestaande Z365-installatiemap.
 3. Start de update opnieuw vanuit je bestaande Z365-installatie.
 
