@@ -2,11 +2,29 @@
 
 Publieke updatebestanden voor Z365. De automatische updater van Z365 gebruikt de GitHub Releases van deze repository.
 
-De nieuwste gepubliceerde versie is **0.3.14** (19 oktober 2026).
+De nieuwste gepubliceerde versie is **0.3.16** (28 oktober 2026).
 
-- [Release 0.3.14 en wijzigingsinformatie](https://github.com/swanfield1979/Z365updates/releases/tag/v0.3.14)
-- [Download Z365 0.3.14 voor Windows x64](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.14/Z365-0.3.14-win-x64.zip)
-- [SHA256-controlesom](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.14/Z365-0.3.14-win-x64.zip.sha256)
+- [Release 0.3.16 en wijzigingsinformatie](https://github.com/swanfield1979/Z365updates/releases/tag/v0.3.16)
+- [Download Z365 0.3.16 voor Windows x64](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.16/Z365-0.3.16-win-x64.zip)
+- [SHA256-controlesom](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.16/Z365-0.3.16-win-x64.zip.sha256)
+
+## Nieuw in 0.3.16
+
+- Opgeslagen scans hergebruiken in Bestandsanalyse, Bestandsacties en Labelbewaking. Combineer extensie en wijzigingsdatums en verplaats de selectie met actuele broncontrole, SHA-256 en migratiebewijs.
+- Lege mappen na een nieuwe controle verwijderen. Niet-lege of onbereikbare mappen worden overgeslagen.
+- Alle sites scannen vanuit de SharePoint-beheerinventaris, met siteopslag in GB (GiB), aparte bewaarde scans en fouten per site.
+- Tenantkopie met aparte bron- en doelsessies, inhoudscontrole en behoud van de bron. Versiehistorie, rechten en encryptiesleutels worden niet gemigreerd.
+- Beheeracties zijn na aanmelden standaard beschikbaar. Microsoft-rechten, PIM en bevestigingen per actie blijven gelden.
+- View Site Admin gaat door na een fout; Set Site Admin ondersteunt beveiligingsgroepen en Microsoft 365-groepen.
+- Labelbewaking kan dagelijks controleren en ingestelde eigenaren per e-mail attenderen zolang Z365 draait en de brontenant is aangemeld. De termijn begint bij de eerste Z365-waarneming; dit is geen bewezen labeltoekenningsdatum. Z365 verlaagt geen labels automatisch.
+- DLP Agents analyseert aangeleverde Purview-auditrecords voor bewezen Copilot-documentgebruik. Dit is geen complete live inventaris van agentkennisbronnen.
+- Offline installatie met meegeleverde productieafhankelijkheden. Bijgewerkte afhankelijkheden: de productie-audit meldt nul kwetsbaarheden.
+
+317 tests slagen. De interface is op desktop, tablet en mobiel gecontroleerd. De Windows-updateproef vanuit 0.3.14 slaagt met geblokkeerde npm en behoud van instellingen, complete historiescan en historie-PDF. Microsoft-functies zijn lokaal met testclients gecontroleerd en vereisen nog acceptatie in de klanttenant.
+
+Vanuit **0.3.6 t/m 0.3.14**: pak eerst de nieuwe ZIP in een aparte map uit, start daar **Herstel-Z365-update.cmd** en wijs je bestaande programmamap aan. Werk daarna bij via Instellingen > Updates. Of sluit Z365 en kopieer het volledige pakket inclusief node_modules over de bestaande programmamap, met behoud van .env en runtimegegevens. Vanuit de lokale 0.3.15 is helperherstel niet nodig. Node.js 20.17 of hoger blijft vereist.
+
+[Uitgebreide functies, rechten, installatie en beperkingen](https://github.com/swanfield1979/Z365/blob/main/docs/releases/v0.3.16.md) · [Validatie](https://github.com/swanfield1979/Z365/blob/main/docs/validatie-0.3.16.md)
 
 ## Snellere PDF-export in 0.3.14
 
