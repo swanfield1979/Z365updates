@@ -2,11 +2,24 @@
 
 Publieke updatebestanden voor Z365. De automatische updater van Z365 gebruikt de GitHub Releases van deze repository.
 
-De nieuwste gepubliceerde versie is **0.3.16** (28 oktober 2026).
+De nieuwste gepubliceerde versie is **0.3.17** (30 oktober 2026).
 
-- [Release 0.3.16 en wijzigingsinformatie](https://github.com/swanfield1979/Z365updates/releases/tag/v0.3.16)
-- [Download Z365 0.3.16 voor Windows x64](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.16/Z365-0.3.16-win-x64.zip)
-- [SHA256-controlesom](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.16/Z365-0.3.16-win-x64.zip.sha256)
+- [Release 0.3.17 en wijzigingsinformatie](https://github.com/swanfield1979/Z365updates/releases/tag/v0.3.17)
+- [Download Z365 0.3.17 voor Windows x64](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.17/Z365-0.3.17-win-x64.zip)
+- [SHA256-controlesom](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.17/Z365-0.3.17-win-x64.zip.sha256)
+
+## Nieuw in 0.3.17
+
+- Zelfstandig menu **Verplaatsen** met icoon en opgeslagen scans; **Tenantkopie** staat op een eigen pagina met afzonderlijke invoervelden.
+- Kies één of meer extensies uit de scan of Audio, Foto, Video of de gezamenlijke mediacategorie.
+- Combineer laatst gewijzigd, langer dan tien jaar, datumgrenzen, grootte en structuur/aandachtspunten. Geen keuze betekent geen beperking.
+- Vink bestanden afzonderlijk of alle gefilterde resultaten over alle pagina’s aan. Uitsluitend aangevinkte bestanden worden verplaatst, met broncontrole, SHA-256 en controle vóór bronverwijdering.
+- Verplaatsen ondersteunt lokaal en SharePoint als bron en doel. Mapstructuur en wijzigingsdatum blijven behouden. Bestaande doelbestanden worden niet overschreven.
+- Ook Labelbewaking en DLP Agents hebben menu-iconen.
+
+321 tests slagen. De lokale interfaceproef met 205 bestanden controleert paginering, meervoudige selectie, gecombineerde filters, mediafilter, het verplaatsen van uitsluitend één aangevinkt bestand en hergebruik van de opgeslagen scan. Vier pagina’s zijn gecontroleerd op 1440, 1024, 768 en 390 pixels breed zonder JavaScript-fouten of pagina-overloop. Echte SharePoint-overdrachten vereisen nog acceptatie met tenantproefdata. Laatst gewijzigd meet geen leesgebruik.
+
+[Gebruik, installatie en grenzen](https://github.com/swanfield1979/Z365/blob/main/docs/releases/v0.3.17.md) · [Validatie](https://github.com/swanfield1979/Z365/blob/main/docs/validatie-0.3.17.md)
 
 ## Nieuw in 0.3.16
 
