@@ -2,11 +2,22 @@
 
 Publieke updatebestanden voor Z365. De automatische updater van Z365 gebruikt de GitHub Releases van deze repository.
 
-De nieuwste gepubliceerde versie is **0.3.18** (30 oktober 2026).
+De nieuwste gepubliceerde versie is **0.3.19** (30 oktober 2026).
 
-- [Release 0.3.18 en wijzigingsinformatie](https://github.com/swanfield1979/Z365updates/releases/tag/v0.3.18)
-- [Download Z365 0.3.18 voor Windows x64](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.18/Z365-0.3.18-win-x64.zip)
-- [SHA256-controlesom](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.18/Z365-0.3.18-win-x64.zip.sha256)
+- [Release 0.3.19 en wijzigingsinformatie](https://github.com/swanfield1979/Z365updates/releases/tag/v0.3.19)
+- [Download Z365 0.3.19 voor Windows x64](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.19/Z365-0.3.19-win-x64.zip)
+- [SHA256-controlesom](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.19/Z365-0.3.19-win-x64.zip.sha256)
+
+## Nieuw in 0.3.19
+
+- Tenantkopie, Labelbewaking en DLP Agents zijn verwijderd uit menu, schermen, API-routes en handleiding, voor een nieuw ontwerp.
+- De aparte doelaanmelding en dagelijkse labelcontrole met e-mailacties zijn verwijderd.
+- Verplaatsen en Scan bestanden blijven beschikbaar, inclusief bewaarde klikfilters, bestandsselectie en gecontroleerde overdracht. Migratie en het bestaande Agents-overzicht blijven beschikbaar.
+- Bestaande opgeslagen gegevens blijven behouden; oude paginalinks openen Home.
+
+316 tests slagen. De interfaceproef controleert de verwijderde menu’s en schermen en de werkende scan- en verplaatsworkflow.
+
+[Installatie en wijzigingen](https://github.com/swanfield1979/Z365/blob/main/docs/releases/v0.3.19.md) · [Validatie](https://github.com/swanfield1979/Z365/blob/main/docs/validatie-0.3.19.md)
 
 ## Nieuw in 0.3.18
 
