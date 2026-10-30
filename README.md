@@ -2,11 +2,23 @@
 
 Publieke updatebestanden voor Z365. De automatische updater van Z365 gebruikt de GitHub Releases van deze repository.
 
-De nieuwste gepubliceerde versie is **0.3.17** (30 oktober 2026).
+De nieuwste gepubliceerde versie is **0.3.18** (30 oktober 2026).
 
-- [Release 0.3.17 en wijzigingsinformatie](https://github.com/swanfield1979/Z365updates/releases/tag/v0.3.17)
-- [Download Z365 0.3.17 voor Windows x64](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.17/Z365-0.3.17-win-x64.zip)
-- [SHA256-controlesom](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.17/Z365-0.3.17-win-x64.zip.sha256)
+- [Release 0.3.18 en wijzigingsinformatie](https://github.com/swanfield1979/Z365updates/releases/tag/v0.3.18)
+- [Download Z365 0.3.18 voor Windows x64](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.18/Z365-0.3.18-win-x64.zip)
+- [SHA256-controlesom](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.18/Z365-0.3.18-win-x64.zip.sha256)
+
+## Nieuw in 0.3.18
+
+- **Verplaatsen** werkt zoals **Scan bestanden**: bronkeuze, locatiecontrole, bewaarde scans, voortgang en dezelfde analyse met aantallen en balken.
+- Klik op een extensie, ouderdom, grootte of aandachtspunt om direct te filteren. Meerdere extensies en verschillende groepen blijven samen geselecteerd. Opnieuw klikken zet alleen die keuze uit.
+- Filters blijven per scan en browser bewaard na navigeren en herladen. De laatste scan wordt opnieuw geopend; opnieuw scannen van dezelfde bron neemt de filters over. Actieve filters zijn afzonderlijk te verwijderen. Filters wissen wordt ook onthouden.
+- Vink bestanden afzonderlijk of alle gefilterde resultaten aan en verplaats ze naar lokaal of SharePoint. Alleen aangevinkte bestanden worden verwerkt, met de bestaande bron- en inhoudscontroles vóór bronverwijdering.
+- Lege mappen en toegangsmeldingen openen als details zonder de bestandsfilters te wijzigen. De lijst met eerdere scans in Scan bestanden werkt weer.
+
+322 tests slagen. De interfaceproef controleert gecombineerde klikfilters, herladen, afzonderlijke scanvoorkeuren, detailinspectie, herstel na een serverfout, paginering en een echte lokale verplaatsing van een aangevinkt EXE-bestand van 12 MB. De gedeelde analyse is gecontroleerd op 1440, 1024, 768 en 390 pixels breed. Echte SharePoint-overdrachten vereisen nog acceptatie met tenantproefdata. Laatst gewijzigd meet geen leesgebruik. Bestandsvinkjes worden na herladen opnieuw gekozen; filtervoorkeuren blijven lokaal bewaard.
+
+[Gebruik en installatie](https://github.com/swanfield1979/Z365/blob/main/docs/releases/v0.3.18.md) · [Validatie](https://github.com/swanfield1979/Z365/blob/main/docs/validatie-0.3.18.md)
 
 ## Nieuw in 0.3.17
 
