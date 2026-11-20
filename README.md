@@ -2,11 +2,28 @@
 
 Publieke updatebestanden voor Z365. De automatische updater van Z365 gebruikt de GitHub Releases van deze repository.
 
-De nieuwste gepubliceerde versie is **0.3.19** (30 oktober 2026).
+De nieuwste gepubliceerde versie is **0.3.21** (20 november 2026).
 
-- [Release 0.3.19 en wijzigingsinformatie](https://github.com/swanfield1979/Z365updates/releases/tag/v0.3.19)
-- [Download Z365 0.3.19 voor Windows x64](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.19/Z365-0.3.19-win-x64.zip)
-- [SHA256-controlesom](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.19/Z365-0.3.19-win-x64.zip.sha256)
+- [Release 0.3.21 en wijzigingsinformatie](https://github.com/swanfield1979/Z365updates/releases/tag/v0.3.21)
+- [Download Z365 0.3.21 voor Windows x64](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.21/Z365-0.3.21-win-x64.zip)
+- [SHA256-controlesom](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.21/Z365-0.3.21-win-x64.zip.sha256)
+
+## Nieuw in 0.3.21
+
+- De SharePoint-fout **Maximum call stack size exceeded** bij grote bibliotheken is gereproduceerd en verholpen. Zowel het samenvoegen van bibliotheken als de grootteberekeningen van grote duplicaatgroepen zijn hersteld.
+- Inventarisatie verwerkt Graph-pagina's direct met begrensde paralleliteit. Daarna volgen inhoudscontrole in batches van 100 en de sitebrede duplicaatrapportage.
+- Hashlimiet **0 = onbeperkt** werkt nu ook voor SharePoint. Voortgang toont de huidige locatie en gelezen bytes. Stilgevallen downloads krijgen een inactiviteitstime-out; stoppen onderbreekt ook een actieve download.
+- De eigenaarcontrole uit 0.3.20 blijft behouden. Gedeeltelijke toegang en downloadfouten blijven zichtbaar; alleen volledig gecontroleerde inhoud geldt als bewezen duplicaat.
+
+Installeer het **volledige pakket** en herstart Z365. Alleen `duplicates.js` vervangen is niet voldoende. Controleer versie **0.3.21**, vernieuw de browser en start een nieuwe scan. De batches zijn geen blijvende hervatpunten; metadata en eindrapport blijven in het servergeheugen.
+
+333 tests slagen, inclusief 150.000 bestanden per bibliotheek, grote duplicaatgroepen en annulering tijdens lezen. De echte Windows-update van 0.3.20 naar 0.3.21 slaagt met npm geblokkeerd en behoud van configuratie, historie en PDF-export. De productiesite uit de foutmelding is niet benaderd.
+
+[Installatie en wijzigingen](https://github.com/swanfield1979/Z365/blob/main/docs/releases/v0.3.21.md) - [Validatie](https://github.com/swanfield1979/Z365/blob/main/docs/validatie-0.3.21.md)
+
+## Nieuw in 0.3.20
+
+Scan bestanden controleert of de aanmaker van een SharePoint-bestand nog een actief Microsoft 365-account heeft. Ontbrekende, uitgeschakelde en verwijderde aanmakers zijn beschikbaar als filter. Mislukte accountcontroles worden als gedeeltelijke dekking gemeld, niet onterecht als eigenaarloos geteld. Lokale scans vallen buiten deze controle.
 
 ## Nieuw in 0.3.19
 
