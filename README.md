@@ -2,11 +2,20 @@
 
 Publieke updatebestanden voor Z365. De automatische updater van Z365 gebruikt de GitHub Releases van deze repository.
 
-De nieuwste gepubliceerde versie is **0.3.21** (20 november 2026).
+De nieuwste gepubliceerde versie is **0.3.22** (20 november 2026).
 
-- [Release 0.3.21 en wijzigingsinformatie](https://github.com/swanfield1979/Z365updates/releases/tag/v0.3.21)
-- [Download Z365 0.3.21 voor Windows x64](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.21/Z365-0.3.21-win-x64.zip)
-- [SHA256-controlesom](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.21/Z365-0.3.21-win-x64.zip.sha256)
+- [Release 0.3.22 en wijzigingsinformatie](https://github.com/swanfield1979/Z365updates/releases/tag/v0.3.22)
+- [Download Z365 0.3.22 voor Windows x64](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.22/Z365-0.3.22-win-x64.zip)
+- [SHA256-controlesom](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.22/Z365-0.3.22-win-x64.zip.sha256)
+
+## Nieuw in 0.3.22
+
+- Grote duplicaatresultaten worden in delen opgehaald en groepsbestanden per pagina getoond. JSON-export wordt gestreamd.
+- SharePoint-hashes worden na afgeronde batches bewaard. Een opnieuw gestarte scan inventariseert opnieuw en hergebruikt hashes alleen bij dezelfde bibliotheek, bestands-ID, eTag en grootte.
+- Herstelpunten bevatten geen bestandsinhoud; bescherm de Z365-gegevensmap. Per site geldt 256 MB en herstelpunten ouder dan 30 dagen worden bij een volgende scan van die site verwijderd.
+- De inventaris en het afgeronde rapport blijven in het servergeheugen en verdwijnen bij herstart. Scans uit eerdere versies hebben geen herstelpunten; stel eerst beschikbare exports veilig.
+
+Installeer het volledige pakket via **Instellingen > Updates** en herstart Z365. [Installatie en beperkingen](https://github.com/swanfield1979/Z365/blob/main/docs/releases/v0.3.22.md).
 
 ## Nieuw in 0.3.21
 
