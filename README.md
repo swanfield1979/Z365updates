@@ -2,11 +2,25 @@
 
 Publieke updatebestanden voor Z365. De automatische updater van Z365 gebruikt de GitHub Releases van deze repository.
 
-De nieuwste gepubliceerde versie is **0.3.22** (20 november 2026).
+De nieuwste gepubliceerde versie is **0.4.0** (22 november 2026).
 
-- [Release 0.3.22 en wijzigingsinformatie](https://github.com/swanfield1979/Z365updates/releases/tag/v0.3.22)
-- [Download Z365 0.3.22 voor Windows x64](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.22/Z365-0.3.22-win-x64.zip)
-- [SHA256-controlesom](https://github.com/swanfield1979/Z365updates/releases/download/v0.3.22/Z365-0.3.22-win-x64.zip.sha256)
+- [Release 0.4.0 en wijzigingen](https://github.com/swanfield1979/Z365updates/releases/tag/v0.4.0)
+- [Download Z365 0.4.0 voor Windows x64](https://github.com/swanfield1979/Z365updates/releases/download/v0.4.0/Z365-0.4.0-win-x64.zip)
+- [SHA-256-controlesom](https://github.com/swanfield1979/Z365updates/releases/download/v0.4.0/Z365-0.4.0-win-x64.zip.sha256)
+
+## Nieuw in 0.4.0
+
+- Verplaatsvoorcontroles bewaken zelf bevestiging, verval, eenmalige taakstart en de vereiste Microsoft-beheersessie.
+- Browserselectie beheert filters per scan, vinkselecties en verzoekvolgorde; oude antwoorden vervangen geen nieuwe selectie.
+- Historieresultaten ondersteunen dezelfde paginering en iteratie voor oude scans en de doorlopende collectie, met behoud van PDF-streaming.
+- De updatehelper vervangt de voortgangs-JSON atomair en wacht tijdelijke Windows-vergrendelingen begrensd af.
+- Alle publieke verbeteringen tot 0.3.22 blijven behouden, waaronder eigenaarcontrole, SharePoint-hasherstelpunten, begrensde scanbatches en grote resultaten in delen. Het filter voor een onbekende of inactieve aanmaker werkt ook bij Verplaatsen.
+
+**352 tests geslaagd.** Het Windows-pakket bevat de productieafhankelijkheden. Node.js 20.17 of hoger blijft vereist. Tenantkopie, Labelbewaking en DLP Agents blijven verwijderd voor herontwerp; de oude afzonderlijke lokale DLP-ontwikkelbuild is niet opgenomen.
+
+De eerste automatische overstap gebruikt nog de helper van de bestaande installatie. Bij een statusconflict: sluit Z365 en installeer het volledige pakket handmatig, met behoud van `.env` en runtimegegevens. Daarna gebruiken updates de gerepareerde helper.
+
+[Installatie en wijzigingen](https://github.com/swanfield1979/Z365/blob/main/docs/releases/v0.4.0.md) · [Validatie](https://github.com/swanfield1979/Z365/blob/main/docs/validatie-0.4.0.md) · [Diagnose](https://github.com/swanfield1979/Z365/blob/main/docs/diagnose-update-status.md)
 
 ## Nieuw in 0.3.22
 
